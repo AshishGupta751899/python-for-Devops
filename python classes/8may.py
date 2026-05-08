@@ -10,4 +10,4 @@ for i in range(0,15,2):
      
 wap to takes start_point and end_point from user input
 wap to take a number from user input and print formated table
-wap  jjvj
+wap  jjvj ,bb
