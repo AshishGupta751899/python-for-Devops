@@ -11,4 +11,5 @@ print(num1,"+",num2,"=",sum1)
 # Type casting and type conversion
 var1=float(1000)
 print(type(var1))
-print(var1)
+print(var1 )
+print("hello")
