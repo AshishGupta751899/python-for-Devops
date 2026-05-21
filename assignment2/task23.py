@@ -31,3 +31,66 @@
 # ○ The game will end when all the questions have been answered or skipped. The
 # user should receive their total score
  
+print("Welcome to the KBC Game!")
+start_game = input("Do you want to start the game? (yes/no): ").strip().lower()
+if start_game != "yes":
+    print("Thank you for visiting. Have a nice day!")
+    exit() 
+score = 0
+correct_answers = 0
+skipped_questions = 0
+wrong_answers = 0
+questions = [
+    {
+        "question": "What is the capital of France?",
+        "options": ["A. Berlin", "B. Madrid", "C. Paris", "D. Rome"],
+        "answer": "C",
+        "points": 1000
+    },
+    {
+        "question": "Who wrote 'Hamlet'?",
+        "options": ["A. Charles Dickens", "B. William Shakespeare", "C. Mark Twain", "D. Jane Austen"],
+        "answer": "B",
+        "points": 2000
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "options": ["A. Earth", "B. Mars", "C. Jupiter", "D. Saturn"],
+        "answer": "C",
+        "points": 3000
+    },
+    {
+        "question": "Which element has the chemical symbol 'O'?",
+        "options": ["A. Gold", "B. Oxygen", "C. Silver", "D. Iron"],
+        "answer": "B",
+        "points": 5000
+    },
+    {
+        "question": "Who is known as the father of modern physics?",
+        "options": ["A. Isaac Newton", "B. Albert Einstein", "C. Galileo Galilei", "D. Nikola Tesla"],
+        "answer": "B",
+        "points": 10000
+    }
+]
+for q in questions:
+    print("\n" + q["question"])
+    for option in q["options"]:
+        print(option)
+    user_input = input("Enter your answer (A, B, C, D) or type 'skip' to skip: ").strip().upper()
+    if user_input == "SKIP":
+        skipped_questions += 1
+        print("Question skipped.")
+    elif user_input == q["answer"]:
+        score += q["points"]
+        correct_answers += 1
+        print("Correct! You've earned {} points.".format(q["points"]))
+    else:
+        wrong_answers += 1
+        print("Wrong answer. No points awarded.")
+
+print("\nGame Over!")
+print("Total Score: {}".format(score))
+print("Correct Answers: {}".format(correct_answers))
+print("Skipped Questions: {}".format(skipped_questions))
+print("Wrong Answers: {}".format(wrong_answers))
+
