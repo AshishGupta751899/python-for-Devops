@@ -46,3 +46,4 @@ if 21 <= age <= 32 and graduate_status == "yes" and nationality == "indian":
             print("You failed the Mains.")
     else:
         print("You failed the Prelims.")  
+
