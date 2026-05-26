@@ -5,4 +5,4 @@ for i in range(1,num+1):
         print("number is prime")
     else:
         print("number is not prime")
-        
+            
