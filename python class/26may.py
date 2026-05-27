@@ -20,4 +20,15 @@
 marks_10th=[20,55,60,76,50,60]
 print("before update : marks_10th")
 marks_10th[-1]=200 #mutating list index using index
-print("after updting :marks_10th")
+print("after updting :" ,marks_10th)
+
+
+n=7
+for i in range(n):
+    for j in range(n):
+        if j==0 or j==n-1 or i==n//2:
+            print("*" , end=" ")
+        else:
+            print(" " ,end=" ")
+    print( )
+        
