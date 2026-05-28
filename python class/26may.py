@@ -16,6 +16,16 @@
 #4.list support indexing , slicing and follows ordering sequence.
 
 
+#list and its property
+#1. Creation of list
+#2.updation of list
+#3.indexing
+#4.slicing
+#5.traversing
+#6. In-built method
+#7.Test
+#8.Assignment
+
 # example :
 marks_10th=[20,55,60,76,50,60]
 print("before update : marks_10th")
