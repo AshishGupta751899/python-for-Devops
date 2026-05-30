@@ -79,3 +79,5 @@ for i in list:
         str1+=1
 print(int1)
 print(str1)            
+
+#fdddj
