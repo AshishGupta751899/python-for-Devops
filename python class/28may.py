@@ -80,4 +80,4 @@ for i in list:
 print(int1)
 print(str1)            
 
-#fdddj
+#5.Wap to find the count of how many int value and how many str in the list
